@@ -1,0 +1,18 @@
+:root {
+    /* COLOR */
+
+    --primary-color-darkBlue: #043873;
+    --primary-color-blue: #4F9CF9;
+    --secondary-color-yellow: #FFE492;
+    --secondary-color-blue: #A7CEFC;
+    --secondary-color-white: #FFFFFF;
+    --secondary-color-black: #212529;
+
+    /* Font */
+
+    --font: red 50px;
+}
+
+h2 {
+    font: var(--font);
+}
