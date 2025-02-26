@@ -10,9 +10,93 @@
 
     /* Font */
 
-    --font: red 50px;
+    --extra-small: 18px;
+    --small-size: 24px;
+    --middle-size: 36px;
+    --large-size: 64px;
+    --extra-large-size: 72px;
+
+    --small-weight: 400;
+    --middle-weigth: 500;
+    --large-weight: 600;
+    --extra-large-weight: 700;
 }
 
-h2 {
-    font: var(--font);
+
+img {
+    aspect-ratio: unset;
 }
+
+body {
+    color: var(--secondary-color-white);
+    background-color: var(--primary-color-darkBlue);
+    height: 100%;
+    max-width: 1920px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+/* Header */
+
+header {
+    margin: 16px 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 32px;
+}
+
+header .login-block-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section master-block */
+
+section {
+    padding: 140px 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Button */
+
+button {
+    white-space: no-wrap;
+}
+
+h1 {
+
+    font-size: var(--large-size);
+    font-weight: var(--extra-large-weight);
+}
+
+p {
+    font-size: var(--extra-small);
+    font-weight: var(--small-weight);
+}
+
+
+
+/* Заметки 
+Чередование фона, через nth
+
+
+
+
+
+*/
