@@ -1,5 +1,4 @@
 :root {
-    /* COLOR */
 
     --primary-color-darkBlue: #043873;
     --primary-color-blue: #4F9CF9;
@@ -8,8 +7,7 @@
     --secondary-color-white: #FFFFFF;
     --secondary-color-black: #212529;
 
-    /* Font */
-
+    --exta-extra-small: 16px;
     --extra-small: 18px;
     --small-size: 24px;
     --middle-size: 36px;
@@ -22,17 +20,94 @@
     --extra-large-weight: 700;
 }
 
+/* Font and Color */
+
+h1 {
+    /* color: purple; */
+    font-size: var(--large-size);
+    font-weight: var(--extra-large-weight);
+}
+
+h2 {
+    /* color: brown; */
+    font-size: var(--extra-large-size);
+    font-weight: var(--extra-large-weight);
+}
+
+h3 {
+    /* color: cyan; */
+    font-size: var(--small-size);
+    font-weight: var(--large-weight);
+}
+
+h4 {
+    /* color: yellow; */
+    font-size: var(--extra-small);
+    font-weight: var(--extra-large-weight);
+}
+
+.text p {
+    /* color: red; */
+    font-size: var(--extra-small);
+    font-weight: var(--small-weight);
+    line-height: 30px;
+}
+
+.text p.mini-text {
+    /* color: green; */
+    font-size: var(--exta-extra-small);
+    font-weight: var(--small-weight);
+}
+
+.text p.medium-text,
+personal.item {
+    /* color: chocolate; */
+    font-size: var(--small-size);
+    font-weight: var(--small-weight);
+}
+
+header a {
+    color: var(--secondary-color-white);
+    font-size: var(--extra-small);
+    font-weight: var(--middle-weigth);
+}
+
+footer a {
+    color: var(--secondary-color-white);
+    font-size: var(--exta-extra-small);
+    font-weight: var(--small-weight);
+}
+
+.choosePlan-block-program strong {
+    color: red;
+    font-size: var(--middle-size);
+    font-weight: var(--extra-large-weight);
+}
+
+.choosePlan-block ul p {
+    font-size: var(--exta-extra-small);
+    font-weight: var(--small-weight);
+}
+
+
+
+
+/* Normal. style */
+
 h1,
+h2,
+h3,
+h4,
 p {
     margin: 0;
 }
 
-img {
-    object-fit: fill;
+a {
+    text-decoration: none;
 }
 
 body {
-    color: var(--secondary-color-white);
+    font-family: "inter", sans-serif;
     background-color: grey;
     height: 100%;
     max-width: 1920px;
@@ -51,7 +126,6 @@ ul {
 /* Header */
 
 header {
-    background-color: var(--primary-color-darkBlue);
     padding: 16px 220px;
     display: flex;
     justify-content: space-between;
@@ -70,63 +144,124 @@ header .login-block-list {
     align-items: center;
 }
 
-/* Section pattern-block */
+header ul {
+    display: flex;
+    flex-direction: row;
+    gap: 71px;
+}
 
-section:nth-child(even) {
+
+/* Page color */
+
+section.PrMj-block,
+section.WkTg-block,
+section.customise-block,
+section.choosePlan-block,
+section.yourData-block,
+section.sponsors-block,
+section.clients-block {
     background-color: var(--secondary-color-white);
     color: var(--secondary-color-black);
-
 }
 
-section:nth-child(odd) {
+header,
+section.master-block,
+section.extension-block,
+section.tryTaskey-block,
+section.apps-block,
+section.tryToday,
+footer {
     background-color: var(--primary-color-darkBlue);
+    color: var(--secondary-color-white);
 }
+
+
+
+
+section {
+    padding: 140px 220px;
+}
+
 
 section.pattern-block {
-    padding: 140px 220px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
 section.pattern-block div {
+    margin: auto;
     display: grid;
     align-self: center;
     gap: 24px;
 }
 
-section.pattern-block img:nth-child(even) {
-    margin-left: 60px;
+section.pattern-block:nth-child(even) {
+    justify-items: end;
 }
 
-section.pattern-block img:nth-child(odd) {
-    margin-right: 60px;
+section.pattern-block:nth-child(odd) {
+    justify-items: start;
 }
 
 
 /* Button */
 
 button {
-    white-space: no-wrap;
+    position: relative;
+    color: var(--secondary-color-white);
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--primary-color-blue);
+    justify-self: start;
+    white-space: nowrap;
+    padding: 20px 64px 20px 40px;
 }
 
-h1 {
+button::after {}
 
-    font-size: var(--large-size);
-    font-weight: var(--extra-large-weight);
-}
+.clients-block-carousel {
+    display: flex;
+    flex-direction: row;
 
-p {
-    font-size: var(--extra-small);
-    font-weight: var(--small-weight);
 }
 
 
 
-/* Заметки 
-Чередование фона, через nth
+section.choosePlan-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.choosePlan-block.text {
+    text-align: center;
+    margin: 0px 251px 0px 251px;
+}
+
+.choosePlan-block-program {
+    display: flex;
+    flex-direction: row;
+}
+
+.choosePlan-block-program div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px 44px;
+}
+
+.choosePlan-block-program div ul {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
 
 
 
 
 
-*/
+
+
+
+/*  Заметки  */
