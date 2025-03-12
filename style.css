@@ -107,8 +107,10 @@ a {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: "inter", sans-serif;
-    background-color: grey;
+    background-color: rgb(176, 176, 176);
     height: 100%;
     max-width: 1920px;
     margin: 0px auto;
@@ -121,35 +123,26 @@ ul {
     list-style: none;
 }
 
+main {
+    flex-grow: 1;
+}
+
 
 
 /* Header */
 
 header {
-    padding: 16px 220px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
 }
 
-header .header-nav-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header .login-block-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header ul {
+header .header-nav ul {
+    width: 551px;
     display: flex;
     flex-direction: row;
-    gap: 71px;
+    justify-content: space-between;
 }
-
 
 /* Page color */
 
